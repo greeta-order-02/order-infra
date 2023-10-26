@@ -22,7 +22,7 @@ resource "kubernetes_deployment_v1" "order_ui_deployment" {
       }
       spec {
         container {
-          image = "ghcr.io/greeta-order-01/order-ui"
+          image = "ghcr.io/greeta-order-02/order-ui"
           name  = "order-ui"
           image_pull_policy = "Always"
           port {
