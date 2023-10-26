@@ -42,7 +42,7 @@ resource "kubernetes_deployment_v1" "erp_deployment" {
         service_account_name = "spring-cloud-kubernetes"      
         
         container {
-          image = "ghcr.io/greeta-order-02/erp-service:011b00a6cd3ff18e72944018676714ce212330ba"
+          image = "ghcr.io/greeta-order-02/erp-service:6bacad6d3b99cfc978d911eecfc1afbb2f7fb614"
           name  = "erp"
           image_pull_policy = "Always"
           port {
